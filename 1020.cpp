@@ -20,3 +20,4 @@ dia = idade%30;
 printf("%d dia(s)\n",dia);
 return 0;
 }
+

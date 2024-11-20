@@ -51,5 +51,6 @@ else if(strcmp(A,"invertebrado")==0){
         }
     }
 }
+    
 return 0;
 }
