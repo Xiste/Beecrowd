@@ -2,17 +2,17 @@
 
 int main(){
 
-double M[12][12],soma=0;
 int x;
+double M[12][12],b,soma=0;
 char c;
 
 scanf("%d %c",&x,&c);
 
-for(int i = 0; i<12;i++){
-    for(int j = 0; j<12;j++){
-        scanf("%lf",&M[i][j]);
-        if(i==x){
-            soma+= M[i][j];
+for(int i = 0;i<12; i++){
+    for (int j = 0; j<12;j++){
+        scanf("%lf",&b);
+        if(j==x){
+            soma+= b;
         }
     }
 }
@@ -21,5 +21,4 @@ if(c=='S'){
 }else{
     printf("%.1lf\n",soma/12.0);
 }
-return 0;
-}
+return 0;}
