@@ -2,13 +2,13 @@
 
 int main(){
 
-    int a,b,conta;
+    long int a,b,conta;
 
-    scanf("%d%d",&a,&b);
+    scanf("%ld%ld",&a,&b);
 
     conta =a*b;
 
-    printf("%d\n",conta);
+    printf("%ld\n",conta);
 
     return 0;
 }
