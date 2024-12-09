@@ -1,27 +1,24 @@
 #include <bits/stdc++.h>
 
-int main (){
+int main()
+{
+    int pulo,cano,i;
 
-    int x,y,cano[y];
+    scanf("%d%d",&pulo,&cano);
 
-    scanf("%d%d",&x,&y);
+    int quantidade[cano];
 
-    for(int i = 0; i<y;i++){
-
-        scanf("%d",&cano[i]);
-
-
-
-
-
-
+    for(i = 0; i<cano;i++){
+        scanf("%d",&quantidade[i]);
     }
-    printf("%d",x);
-
-    if(x>=cano){
+    for(i = 0; i<cano-1;i++){
+        if(abs(quantidade[i]-quantidade[i+1])>pulo){
+            printf("GAME OVER\n");
+            break;
+        }
+    }
+    if(i==cano-1){
         printf("YOU WIN\n");
-    }else{
-        printf("GAME OVER\n");
     }
     return 0;
 }
